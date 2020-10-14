@@ -1,0 +1,16 @@
+spring:
+  profiles: default
+  datasource:
+    url: jdbc:postgresql://localhost:5432/proxify
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQL12Dialect
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    url: jdbc:postgresql://localhost:5432/proxify
+    user: postgres
+    password: postgres
